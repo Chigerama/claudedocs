@@ -77,7 +77,7 @@ def build_doc(folder):
 
     # --resource-path lets pandoc find images/ relative to the doc's folder.
     common = ["-f", "markdown", "-s", "--toc", "--toc-depth=2", f"--resource-path={folder}",
-              "-M", f"title={meta['title']}", "-M", f"author={meta.get('author', '')}",
+              "-M", f"title={meta['title']}",
               "-M", f"date={date}", "-M", f"lang={meta.get('lang', 'en-AU')}"]
     files = {}
     if "pdf" in FORMATS:
