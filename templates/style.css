@@ -1,0 +1,10 @@
+/* HTML look for claudedocs pages */
+body { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; font: 16px/1.55 system-ui, sans-serif; color: #1d1d1f; }
+h1, h2, h3 { line-height: 1.25; color: #1f3a5f; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92em; }
+th, td { border: 1px solid #d0d7de; padding: 0.35rem 0.6rem; vertical-align: top; }
+th { background: #f0f3f6; }
+code { font-size: 0.9em; background: #f6f8fa; padding: 0.1em 0.3em; border-radius: 4px; }
+pre code { display: block; padding: 0.8rem; overflow-x: auto; }
+blockquote { color: #57606a; border-left: 3px solid #d0d7de; margin-left: 0; padding-left: 1rem; }
+nav#TOC { background: #f6f8fa; padding: 0.5rem 1rem; border-radius: 6px; }

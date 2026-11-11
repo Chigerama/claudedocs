@@ -1,0 +1,18 @@
+# Eisvogel settings for every PDF (github.com/Wandmalfarbe/pandoc-latex-template).
+papersize: a4
+geometry: "margin=2.2cm"
+fontsize: 10pt
+mainfont: "DejaVu Sans"        # has the → · – glyphs the docs use
+monofont: "DejaVu Sans Mono"
+titlepage: true
+titlepage-color: "1F3A5F"
+titlepage-text-color: "FFFFFF"
+titlepage-rule-color: "FFFFFF"
+titlepage-rule-height: 2
+# titlepage-logo: "templates/logo.png"
+toc-own-page: true
+colorlinks: true
+header-left: "\\thetitle"
+footer-left: "claudedocs"
+table-use-row-colors: true
+code-block-font-size: "\\footnotesize"
