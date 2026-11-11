@@ -2,7 +2,7 @@
 title: "Living Docs → GitLab: Build Guide"
 slug: living-docs-guide
 lang: en-AU
-last_sync: "2026-11-11T10:41Z"
+last_sync: "2026-11-11T21:25Z"
 tabs:
   - file: 00-living-docs-gitlab.md
     name: "Living Docs → GitLab"
@@ -32,19 +32,23 @@ tabs:
     name: "Part 5 · Run, recover, extend"
     rev: 4
     publish: true
-  - file: 07-skills.md
+  - file: 07-part-6-mirror-to-github.md
+    name: "Part 6 · Mirror to GitHub"
+    rev: 22
+    publish: true
+  - file: 08-skills.md
     name: "Skills"
     rev: 4
     publish: true
-  - file: 08-documentation.md
+  - file: 09-documentation.md
     name: "Documentation"
     rev: 2
     publish: true
-  - file: 09-task-checklist.md
+  - file: 10-task-checklist.md
     name: "Task checklist"
     rev: 2
     publish: true
-  - file: 10-changelog.md
+  - file: 11-changelog.md
     name: "Changelog"
     rev: 2
     publish: true
