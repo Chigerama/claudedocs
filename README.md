@@ -79,4 +79,4 @@ Bump `version` in both `plugin.json` and `marketplace.json` when a skill changes
 
 ## License
 
-None yet. Add one before others install or reuse this.
+See [LICENSE](LICENSE): the Mutually Assured Documentation License. Every clause in it is unenforceable on purpose, so Section 8 makes it MIT in practice.

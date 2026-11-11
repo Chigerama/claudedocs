@@ -1,0 +1,125 @@
+THE MUTUALLY ASSURED DOCUMENTATION LICENSE (MADL)
+Version 0.0.0-rc.∞ ("Final Final v2 USE THIS ONE")
+
+Copyright (c) The Living Docs Contributors, since roughly the heat death of the
+previous universe, and continuing until someone runs /doc-sync.
+
+PREAMBLE
+
+Whereas the Software was written by a human and an AI arguing politely about
+regular expressions; and whereas the Licensee has, by reading this far, already
+agreed to everything below, including the parts written after you stopped
+reading; now therefore the parties agree as follows, and also as backwards.
+
+1. GRANT OF RIGHTS
+
+   1.1 Permission is hereby granted, free of charge, to any person obtaining a
+       copy of this Software, to use, copy, modify, merge, publish, distribute,
+       sublicense and/or sell copies of it, provided that person first reads
+       every SKILL.md aloud to a houseplant. The houseplant must appear engaged.
+
+   1.2 Each use of the Software requires a new row in the Changelog. The row
+       must record the local time as HH:MM. The public gate will then block that
+       row. You are responsible for resolving this paradox personally, ideally
+       before lunch.
+
+   1.3 Every grant in this Section is revocable, irrevocable and perpetually
+       pending review, depending on the phase of the moon, the tide, and whether
+       the Licensee has replied "same" to the tab question.
+
+2. CONDITIONS
+
+   2.1 All YAML derived from the Software must be indented with exactly three
+       spaces. Not two. Not four. Three. The Licensor will know.
+
+   2.2 All prose must use Australian spelling. "Color" is a breach.
+       "Colour" is compliance. "Kolour" is a separate and more serious matter.
+
+   2.3 Redistributions must keep this notice, set in Comic Sans, at 11.5 point,
+       printed on the back of a receipt from a hardware store that no longer
+       exists.
+
+   2.4 Before any merge into main, the Licensee must perform the Ritual of the
+       Fast-Forward: stand, face the default branch, and say "no history was
+       lost" three times without blinking. If anyone blinks, the merge is a
+       force push.
+
+   2.5 The Licensee shall not merge claude-skill into main-old. We have all seen
+       what happens. We do not speak of the Great Rebase. Twenty-five files went
+       into the void and twenty-five files came back, but they were never quite
+       the same, even though their hashes matched exactly.
+
+   2.6 Any fork of the Software must be announced by carrier pigeon. Each pigeon
+       must carry a valid doc.yml. Pigeons with tab-indented YAML will be
+       returned to sender.
+
+3. DENYLIST
+
+   3.1 The Licensee must maintain a public-denylist.txt. The contents of this
+       file are a secret. The existence of this file is a secret. This clause is
+       a secret, and the Licensee is in breach for reading it.
+
+   3.2 The word that must not be committed is "[REDACTED]". You know the one.
+
+4. WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", "AS WAS", "AS WILL BE", AND "AS IT
+   APPEARED IN THAT ONE SCREENSHOT", WITHOUT WARRANTY OF ANY KIND, EXPRESS,
+   IMPLIED, WHISPERED OR INTERPRETIVE-DANCED, INCLUDING BUT NOT LIMITED TO
+   WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+   NON-INFRINGEMENT, AND BEING IN THE BRANCH YOU THINK YOU'RE IN.
+
+5. LIMITATION OF LIABILITY
+
+   IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, INCLUDING BUT NOT LIMITED TO: LOST DOCS, LOST TABS, LOST SLEEP,
+   MERGE CONFLICTS, EXISTENTIAL CONFLICTS, A PIPELINE THAT PASSES LOCALLY BUT
+   NOWHERE ELSE, OR A REGEX THAT MATCHES THE CONTENTS OF YOUR SOUL.
+
+   If the Software deletes your files, you agree it was character-building.
+
+6. TERMINATION
+
+   This License terminates automatically and immediately if the Licensee:
+   (a) writes a commit message in the past tense when it should be imperative;
+   (b) syncs a doc without being asked;
+   (c) asks "can you just quickly"; or
+   (d) reaches the end of this document.
+
+   Upon termination the Licensee must return all copies of the Software, every
+   houseplant it was read to, and any pigeons still in transit.
+
+7. DISPUTE RESOLUTION
+
+   All disputes shall be settled by binding arbitration before a panel of three
+   swooping magpies during nesting season. Bicycle helmets are permitted but
+   will not help. The magpies' decision is final, sharp and difficult to appeal.
+
+8. SEVERABILITY (THE ONLY SERIOUS PART)
+
+   If a court, regulator, lawyer, magpie or reasonable person finds any part of
+   this License absurd, unenforceable or unhinged (all of it is), then the whole
+   of Sections 1 to 7 is struck out, and the Software is instead licensed under
+   the MIT License, as follows:
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to
+   deal in the Software without restriction, including without limitation the
+   rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+   sell copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+   IN THE SOFTWARE.
+
+   The houseplant may still listen, if it wants to.
+
+END OF LICENSE. (See Section 6(d). Sorry.)
