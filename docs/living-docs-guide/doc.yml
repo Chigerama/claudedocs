@@ -1,0 +1,54 @@
+# docs/living-docs-guide/doc.yml  (kept current by Claude)
+title: "Living Docs → GitLab: Build Guide"
+slug: living-docs-guide
+lang: en-AU
+last_sync: "2026-11-11T10:41Z"
+tabs:
+  - file: 00-living-docs-gitlab.md
+    name: "Living Docs → GitLab"
+    rev: 2
+    publish: true
+  - file: 01-claude-context.md
+    name: "Claude context (CLAUDE.md)"
+    rev: 2
+    publish: true
+  - file: 02-part-1-gitlab-project.md
+    name: "Part 1 · GitLab project"
+    rev: 3
+    publish: true
+  - file: 03-part-2-gitlab-connector.md
+    name: "Part 2 · GitLab connector"
+    rev: 2
+    publish: true
+  - file: 04-part-3-mirror-loop.md
+    name: "Part 3 · Mirror loop"
+    rev: 6
+    publish: true
+  - file: 05-part-4-pipeline-and-exports.md
+    name: "Part 4 · Pipeline and exports"
+    rev: 4
+    publish: true
+  - file: 06-part-5-run-recover-extend.md
+    name: "Part 5 · Run, recover, extend"
+    rev: 4
+    publish: true
+  - file: 07-skills.md
+    name: "Skills"
+    rev: 4
+    publish: true
+  - file: 08-documentation.md
+    name: "Documentation"
+    rev: 2
+    publish: true
+  - file: 09-task-checklist.md
+    name: "Task checklist"
+    rev: 2
+    publish: true
+  - file: 10-changelog.md
+    name: "Changelog"
+    rev: 2
+    publish: true
+diagrams:
+  - file: diagrams/317eec89-e5c7.jsx
+    tab: 00-living-docs-gitlab.md
+    caption: "mirror flow · doc to GitLab to published files"
