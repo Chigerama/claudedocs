@@ -25,6 +25,15 @@ no-secrets:
         echo "Home public IP found in the files above: remove it in the doc; the next sync overwrites the file."
         exit 1
       fi
+    # PUBLIC_DENYLIST is a file variable set only in the public project; only file names are printed.
+    - |
+      if [ -n "$PUBLIC_DENYLIST" ] && [ -s "$PUBLIC_DENYLIST" ]; then
+        grep -v '^[[:space:]]*$' "$PUBLIC_DENYLIST" > /tmp/denylist
+        if [ -s /tmp/denylist ] && grep -rliFf /tmp/denylist docs/; then
+          echo "An identifying term appears in the files above: fix the public twin and sync again."
+          exit 1
+        fi
+      fi
 
 build-docs:
   stage: build
