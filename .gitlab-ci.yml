@@ -1,4 +1,5 @@
-# claudedocs pipeline (same file in private and public): check for secrets, build PDF/Word/HTML, publish.
+# claudedocs pipeline (same file in private and public): check for secrets, validate and package
+# the skills, build PDF/Word/HTML, publish.
 stages: [test, build, publish]
 
 workflow:
@@ -34,6 +35,20 @@ no-secrets:
           exit 1
         fi
       fi
+
+skills:
+  stage: test
+  image: python:3.12-alpine
+  script:
+    - pip install --quiet pyyaml
+    - python3 tools/skills.py package
+  artifacts:
+    name: "skills-$CI_COMMIT_REF_SLUG"
+    paths: [dist/]
+    expire_in: 90 days
+  rules:
+    - if: $CI_COMMIT_TAG
+    - changes: [plugins/**/*, shared/**/*, tools/**/*, .claude-plugin/**/*, .gitlab-ci.yml]
 
 build-docs:
   stage: build

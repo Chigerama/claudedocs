@@ -2,3 +2,5 @@ build/
 public/
 *.log
 .env
+dist/
+__pycache__/

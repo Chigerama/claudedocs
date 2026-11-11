@@ -1,0 +1,28 @@
+# Validate and package the living-docs skills (same check as the GitLab "skills" job).
+name: skills
+
+on:
+  push:
+    branches: [main]
+    paths: ["plugins/**", "shared/**", "tools/**", ".claude-plugin/**", ".github/workflows/skills.yml"]
+  pull_request:
+    paths: ["plugins/**", "shared/**", "tools/**", ".claude-plugin/**", ".github/workflows/skills.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pyyaml
+      - run: python3 tools/skills.py package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: skills
+          path: dist/
