@@ -1,9 +1,6 @@
-# claudedocs
+# claudedocs: the living-docs Claude plugin
 
-Two things live here:
-
-1. **The `living-docs` Claude plugin**: three skills that start, redact and mirror living Claude Docs.
-2. **Published copies of selected Claude Docs** under `docs/`, built into PDF, Word and HTML.
+Three Claude skills that start, redact and mirror living Claude Docs. This branch holds only the plugin; the mirrored docs and their PDF build live on `main`.
 
 ## The skills
 
@@ -31,7 +28,7 @@ graph LR
 
 Each skill checks for its tools first and stops, naming what's missing, rather than half-running. They load in Claude Code but only run where the Claude Docs tools exist (Claude on the web, desktop or mobile).
 
-The full setup, covering the GitLab group, the bot account, the connector and the pipeline, is in the build guide: `docs/living-docs-guide/`.
+The full setup, covering the GitLab group, the bot account, the connector and the pipeline, is in the Living Docs build guide (`docs/living-docs-guide/` on `main`).
 
 ### Set your names
 
@@ -46,7 +43,7 @@ python3 tools/skills.py validate
 
 ### Install
 
-**Claude (web, desktop, mobile):** run `python3 tools/skills.py package`, then upload each `dist/<skill>.zip` in **Customize → Skills**. CI builds the same zips as job artifacts.
+**Claude (web, desktop, mobile):** run `python3 tools/skills.py package`, then upload each `dist/<skill>.zip` in **Customize → Skills**. CI builds the same zips as a workflow artifact.
 
 **Claude Code:**
 
@@ -66,21 +63,15 @@ plugins/living-docs/
   skills/<skill>/scripts/           copies of shared scripts (don't edit)
 shared/                             canonical public gate (public_gate.py + public-gate.md)
 tools/skills.py                     sync, validate, package, configure
-docs/<slug>/                        mirrored Claude Docs (overwritten by /doc-sync)
-templates/, build.py                PDF, Word and HTML build
+.github/workflows/skills.yml        CI: validate and package on every change
 ```
+
+`.gitignore` is an allowlist: only the paths above are tracked. Anything else in the folder, such as mirrored docs, build files or private `public.yml` and `public-denylist.txt` files, stays out of git.
 
 ## Source of truth
 
 - **Skills:** `plugins/living-docs/skills/` in this repo, versioned with git. The Skills tab of the build guide and the Living Doc Template doc still hold the older one-file versions. Point those tabs here rather than copying the text again, so the two can't drift.
 - **The public gate:** `shared/`. Edit it there, then run `python3 tools/skills.py sync`. `validate` fails if a copy has drifted.
-- **Docs:** the Claude Doc is the source of truth. Don't edit `docs/` here: the next sync overwrites it.
-
-## Docs build
-
-- `docs/<slug>/doc.yml` lists each doc's tabs. Only tabs with `publish: true` are built.
-- Each push to main builds PDF, Word and HTML (job artifacts; Pages from main).
-- Tag `vX.Y` to cut a release with the files attached.
 
 ## Versioning
 

@@ -1,6 +1,39 @@
-build/
-public/
-*.log
-.env
+# Allowlist: this branch tracks only what the living-docs skills need.
+# Everything else is ignored unless it's listed with "!" below.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/CHANGELOG.md
+!/LICENSE
+!/.claude-plugin/
+!/plugins/
+!/shared/
+!/tools/
+!/.github/
+/.github/*
+!/.github/workflows/
+/.github/workflows/*
+!/.github/workflows/skills.yml
+
+# Never commit these, even inside the folders above.
+# Build output
 dist/
+build/
 __pycache__/
+*.py[cod]
+# Private living-docs files (they belong in GROUP/private only)
+public-denylist.txt
+public.yml
+doc.yml
+# Secrets and local settings
+.env
+.env.*
+*.pem
+*.key
+*.log
+# Transfer and OS files
+*.bundle
+.DS_Store
+Thumbs.db
+desktop.ini
