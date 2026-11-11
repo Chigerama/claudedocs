@@ -2,7 +2,7 @@
 title: "Living Docs → GitLab: Build Guide"
 slug: living-docs-guide
 lang: en-AU
-last_sync: "2026-11-11T21:25Z"
+last_sync: "2026-11-11T22:02Z"
 tabs:
   - file: 00-living-docs-gitlab.md
     name: "Living Docs → GitLab"
@@ -46,7 +46,7 @@ tabs:
     publish: true
   - file: 10-task-checklist.md
     name: "Task checklist"
-    rev: 2
+    rev: 5
     publish: true
   - file: 11-changelog.md
     name: "Changelog"

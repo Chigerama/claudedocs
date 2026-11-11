@@ -76,3 +76,4 @@ Check the public pipeline's no-secrets job passed
 | Cut release tags | Monthly |
 | Review the bot's memberships and authorised application | Every 3 months |
 | Restore test | Every 6 months |
+| Renew the GitHub push-mirror token (if you use Part 6) | Yearly, before it expires |
