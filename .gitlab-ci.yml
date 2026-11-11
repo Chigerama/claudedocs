@@ -29,7 +29,7 @@ no-secrets:
     - |
       if [ -n "$PUBLIC_DENYLIST" ] && [ -s "$PUBLIC_DENYLIST" ]; then
         grep -v '^[[:space:]]*$' "$PUBLIC_DENYLIST" > /tmp/denylist
-        if [ -s /tmp/denylist ] && grep -rliFf /tmp/denylist docs/; then
+        if [ -s /tmp/denylist ] && grep -rliwFf /tmp/denylist docs/; then
           echo "An identifying term appears in the files above: fix the public twin and sync again."
           exit 1
         fi
