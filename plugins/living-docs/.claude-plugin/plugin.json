@@ -1,0 +1,9 @@
+{
+  "name": "living-docs",
+  "version": "1.0.0",
+  "description": "Living Claude Docs mirrored to GitLab: start a doc from the template (living-doc), keep a redacted public twin (doc-redact), and sync changed tabs as signed commits (doc-sync).",
+  "author": {
+    "name": "Ian"
+  },
+  "keywords": ["claude-docs", "gitlab", "documentation", "mirror", "redaction"]
+}

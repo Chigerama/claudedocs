@@ -1,0 +1,17 @@
+{
+  "name": "claudedocs",
+  "owner": {
+    "name": "Ian"
+  },
+  "metadata": {
+    "description": "Skills for living Claude Docs mirrored to GitLab."
+  },
+  "plugins": [
+    {
+      "name": "living-docs",
+      "source": "./plugins/living-docs",
+      "description": "Start, redact and sync living Claude Docs: living-doc, doc-redact and doc-sync.",
+      "version": "1.0.0"
+    }
+  ]
+}
